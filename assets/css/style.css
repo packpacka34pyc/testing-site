@@ -56,7 +56,7 @@ section .panel{
     padding: 10px 45px;
     border: solid 2px #fff;
     border-radius: 10px;
-    transition: .5 ease-in-out;
+    transition: .5s ease-in-out;
 }
 .btn-white-big:hover{
     background: transparent;
@@ -149,7 +149,7 @@ section#advantages{
 section#advantages .item{
     height: 100%;
     transform: scale(.6);
-    transition: .5 ease-in-out;
+    transition: .5s ease-in-out;
 
 }
 section#advantages .item:hover{
@@ -220,9 +220,125 @@ section#partners .partners-label{
     border: solid 1px #e0e0e0;
     cursor: pointer;
     margin: 6px !important;
-    transition: .5 ease-in-out;
+    transition: .5s ease-in-out;
 }
 section#partners #brand-container{
     overflow: hidden;
     position: relative;
+}
+section#consultants{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+section#consultants .item{
+    height: 100%;
+    width: 50%;
+}
+section#consultants .item img{
+    height: 200px;
+}
+section#consultants .item .item-title{
+    color: #3d67b0;
+    margin-top: 15px;
+    font-size: 25px;
+}
+section#consultants .item .item-description{
+    margin-top: 5px;
+    font-size: 17px;
+}
+section#about-segway{
+    margin-top: 150px;
+    position: relative;
+}
+section#about-segway .section-image{
+    height: 300px;
+}
+section#about-segway .title{
+    font-size: 30px;
+    color: #3d67b0;
+}
+section#about-segway .title img{
+    margin-right: 15px;
+    width: 30px;
+}
+section#about-segway ol{
+    margin-top: 25px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+section#catalog{
+    padding-top: 100px;
+}
+section#catalog .categories{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+section#catalog .categories ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+section#catalog input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+}
+section#catalog #giroscooters:checked ~ .categories #giroscooters-tab,
+section#catalog #electric_scooters:checked ~ .categories #electric_scooters-tab,
+section#catalog #segways:checked ~ .categories #segways-tab{
+    color: #fff;
+    background: #3d67b0;
+}
+section#catalog #giroscooters:checked ~ .categories #giroscooters-container,
+section#catalog #electric_scooters:checked ~ .categories #electric_scooters-container,
+section#catalog #segways:checked ~ .categories #segways-container{
+    display: flex;
+}
+section#catalog .categories li label{
+    display: inline-block;
+    user-select: none;
+    padding: 15px 25px;
+    border: solid 2px #3d67b0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #3d67b0;
+    transition: .5s ease-in-out;
+}
+section#catalog .categories li{
+    margin-left: 25px;
+}
+section#catalog .categories li:first-of-type{
+    margin: 0;
+}
+section#catalog .catalog-container{
+    display: none;
+}
+section#catalog .catalog-container .c-card{
+    width: 320px;
+    border: solid 1px #e1e1e1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+section#catalog .catalog-container .c-card img{
+    width: 90%;
+    margin-top: 25px;
+}
+section#catalog .catalog-container .c-card .type span{
+    display: inline-block;
+    border-radius: 5px;
+    background: #3d67b0;
+    color: #fff;
+    padding: 1px 7px;
+    margin: 0 15px;
+}
+section#catalog .catalog-container .c-card .price-container{
+    padding: 0 15px;
+    margin-top: 15px;
+}
+section#catalog .catalog-container .c-card .price-container .price{
+    color: #3d67b0;
+    font-size: 20px;
 }
