@@ -1,8 +1,7 @@
-@font-face {
+@font-face{
     font-family: "GardensC";
     src: url("fonts/GardensC.otf");
 }
-
 *{
     font-family: "GardensC";
     margin: 0;
@@ -10,44 +9,35 @@
     letter-spacing: 1px;
     box-sizing: border-box;
 }
-
-label {
+label{
     margin: 0 !important;
 }
-
-body {
+body{
     position: relative;
 }
-
-a {
+a{
     color: inherit;
 }
-
-a:hover {
+a:hover{
     color: inherit;
     text-decoration: none;
 }
-
-section .panel {
+section .panel{
     width: 100%;
     padding: 0 130px;
 }
-
-.section-title {
+.section-title{
     font-size: 50px;
     color: #3d67b0;
     text-align: center;
 }
-
-.text-upper {
+.text-upper{
     text-transform: uppercase;
 }
-
-.site-name {
+.site-name{
     font-size: 80px;
 }
-
-.btn-order {
+.btn-order{
     background: #fff;
     color: #3d67b0;
     padding: 15px 25px;
@@ -56,115 +46,152 @@ section .panel {
     border-radius: 0 0 20px 20px;
     transition: .5s ease-in-out;
 }
-
-.btn-order:hover {
+.btn-order:hover{
     background: transparent;
     color: #fff;
 }
-
-.btn-white-big {
+.btn-white-big{
     background-color: #fff;
     color: #3d67b0;
+    padding: 10px 45px;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    transition: .5 ease-in-out;
 }
-
-.btn-white-big:hover {
+.btn-white-big:hover{
     background: transparent;
     color: #fff;
 }
-
-.btn-slider {
+.btn-slider{
     width: 50px;
     padding: 5px;
     background: transparent;
 }
-
-.btn-slider:focus {
+.btn-slider:focus{
     box-shadow: none;
 }
-
-.delimiter {
+.delimiter{
     width: 100%;
 }
-
-.btn.btn-primary {
+.btn .btn-primary{
     background: #3d67b0 !important;
     border: #3d67b0 !important;
 }
-
-.form-control {
+.form-control{
     border-radius: 10px;
     padding: 10px 20px;
 }
-
-.justify-content-evenly {
+.justify-content-evenly{
     justify-content: space-evenly;
 }
-
-.btn-up {
+.btn-up{
     position: fixed;
     right: 25px;
     bottom: 25px;
     z-index: 110;
     padding: 15px;
 }
-
-.btn-up img {
+.btn-up img{
     width: 25px;
 }
-
-section #first-page {
+section#first-page{
     height: 100vh;
     color: #fff;
     background-image: url("../img/first-page-bg.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-
-section #first-page > header {
+section#first-page > header{
     width: 100%;
     color: #fff;
 }
-
-section #first-page .logo img {
+section#first-page .logo img{
     width: 100px;
 }
-
-section #first-page .contact > .item p {
+section#first-page .contact > .item p{
     font-size: 12px;
 }
-
-section #first-page .contact > .item img {
-    widows: 25px;
-    margin-left: 15px;
+section#first-page .contact > .item img{
+    width: 25px;
+    margin-right: 15px;
 }
-
-section #first-page .nav {
+section#first-page .nav{
     list-style-type: none;
     display: flex;
     color: #fff;
     justify-content: center;
     align-items: center;
 }
-
-section#first-page .nav li {
+section#first-page .nav li{
     padding-left: 35px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
 }
-
-section#first-page .nav li:first-of-type {
+section#first-page .nav li:first-of-type{
     padding-left: 0;
 }
-
-section#first-page .nav li::after {
+section#first-page .nav li::after{
     content: "";
     height: 3px;
     width: 0;
     background-color: #fff;
     transition: .5s ease-in-out;
 }
-
-section#first-page .nav li:hover::after {
+section#first-page .nav li:hover::after{
     width: 50%;
 }
+section#advantages{
+    background: transparent;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+section#advantages .item{
+    height: 100%;
+    transform: scale(.6);
+    transition: .5 ease-in-out;
+
+}
+section#advantages .item:hover{
+    transform: scale(.8);
+}
+section#advantages .item img{
+    height: 90%;
+}
+section#advantages .item p{
+    font-style: 30px;
+    text-align: center;
+    margin-top: 5px;
+}
+section#about-us{
+    color: #fff;
+    margin-bottom: 100px;
+    height: 150vh;
+    background: url(../img/about-us-bg.png) center no-repeat;
+    background-size: 100% 100%;
+}
+section#partners .item{
+    font-size: 50px;
+    cursor: default;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(-100%);
+    transition-duration: .4s;
+    opacity: 1;
+}
+section#partners .item p{
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: #c5c5c5c5;
+}
+/*
+section#partners .item{
+
+}*/
