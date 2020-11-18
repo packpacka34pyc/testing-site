@@ -283,6 +283,9 @@ section#catalog input[type="radio"]{
     position: absolute;
     opacity: 0;
 }
+section#catalog .catalog-container{
+    display: none;
+}
 section#catalog #giroscooters:checked ~ .categories #giroscooters-tab,
 section#catalog #electric_scooters:checked ~ .categories #electric_scooters-tab,
 section#catalog #segways:checked ~ .categories #segways-tab{
@@ -309,9 +312,6 @@ section#catalog .categories li{
 }
 section#catalog .categories li:first-of-type{
     margin: 0;
-}
-section#catalog .catalog-container{
-    display: none;
 }
 section#catalog .catalog-container .c-card{
     width: 320px;
